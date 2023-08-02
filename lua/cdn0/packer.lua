@@ -29,8 +29,11 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-nvim-lua'     -- Optional
 
     -- Snippets
-    use 'L3MON4D3/LuaSnip'             -- Required
-    
+    use {
+        "L3MON4D3/LuaSnip",
+        dependencies = { "rafamadriz/friendly-snippets" },
+    } -- Required
+
     use {
         "windwp/nvim-autopairs",
         config = function() require("nvim-autopairs").setup {} end
