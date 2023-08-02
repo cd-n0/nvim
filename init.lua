@@ -3,7 +3,7 @@ xd
 --]]
 -- lua folder
 require("cdn0")
-require("luasnip.loaders.from_vscode").lazy_load({paths = "~/.config/nvim/friendly-snippets"})
+--require("luasnip.loaders.from_vscode").lazy_load({paths = "~/.config/nvim/friendly-snippets"})
 
 -- Line numbers for fast navigation
 vim.opt.nu = true

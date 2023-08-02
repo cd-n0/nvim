@@ -1,6 +1,0 @@
-[submodule "friendly-snippets"]
-	path = friendly-snippets
-	url = https://github.com/rafamadriz/friendly-snippets.git
-[submodule "latex-snippets"]
-	path = latex-snippets
-	url = https://github.com/gillescastel/latex-snippets.git
