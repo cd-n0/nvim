@@ -7,7 +7,7 @@ end
 
 local home = vim.env.HOME
 local jdtls_path = vim.fn.stdpath "data" .. "/mason/packages/jdtls/"
-local equinox_version = "1.6.400.v20210924-0641"
+local equinox_version = "1.6.500.v20230622-2056"
 
 WORKSPACE_PATH = home .."/Documents/code/java" .. "/workspace/"
 if vim.fn.has "mac" == 1 then
