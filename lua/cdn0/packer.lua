@@ -40,6 +40,7 @@ return require('packer').startup(function(use)
     }
 
     use 'ThePrimeagen/vim-be-good'
+    use 'ThePrimeagen/harpoon'
     use 'mfussenegger/nvim-jdtls'
     use 'mfussenegger/nvim-dap'
     use 'lervag/vimtex'
