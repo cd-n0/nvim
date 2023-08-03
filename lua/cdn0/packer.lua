@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     {run = ':TSUpdate'}
     )
+    use 'nvim-treesitter/playground'
     -- LSP Support
     use 'neovim/nvim-lspconfig'             -- Required
     use 'williamboman/mason.nvim'           -- Optional
