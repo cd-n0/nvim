@@ -20,8 +20,8 @@ local cmp = require'cmp'
 
 cmp.setup({
     view = {            
-      entries = { name = 'wildmenu', separator = ' · ' }
-      -- entries = { name = "custom" } -- can be "custom", "wildmenu" or "native"
+      -- entries = { name = 'wildmenu', separator = ' · ' }
+      entries = { name = "custom" } -- can be "custom", "wildmenu" or "native"
     },
     snippet = {
         -- REQUIRED - you must specify a snippet engine
