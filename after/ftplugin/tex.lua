@@ -1,2 +1,2 @@
 --  Vimtex compile shortcuts
-vim.keymap.set("n", "<leader>c", "<cmd>VimtexCompile<CR>")
+vim.keymap.set("n", "<leader><leader>c", "<cmd>VimtexCompile<CR>")
