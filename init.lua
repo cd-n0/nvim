@@ -9,7 +9,7 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 
 -- leader key
-vim.keymap.set("n", "<Space>", "<Nop>", { silent = true, remap = false })
+vim.keymap.set({"n","v"}, "<Space>", "<Nop>", { silent = true, remap = false})
 vim.g.mapleader = " "
 --clipboard to system clipboard
 -- vim.opt.clipboard = 'unnamedplus'
