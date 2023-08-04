@@ -6,8 +6,8 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 
 -- ThePrimagen's vim bindings he has a great channel check him out
--- vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
--- vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
