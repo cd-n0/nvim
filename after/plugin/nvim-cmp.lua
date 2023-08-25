@@ -1,25 +1,8 @@
--- Add additional capabilities supported by nvim-cmp
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-local lspconfig = require('lspconfig')
-
--- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver', 'lua_ls', 'jedi_language_server' }
-for _, lsp in ipairs(servers) do
-    lspconfig[lsp].setup {
-        -- on_attach = my_custom_on_attach,
-        capabilities = capabilities,
-    }
-end
-
--- luasnip setup
-local luasnip = require 'luasnip'
-
 -- nvim-cmp setup
 local cmp = require'cmp'
 
 cmp.setup({
-    view = {            
+    view = {
       -- entries = { name = 'wildmenu', separator = ' · ' }
       entries = { name = "custom" } -- can be "custom", "wildmenu" or "native"
     },
@@ -85,14 +68,3 @@ cmp.setup.cmdline(':', {
     { name = 'path' }
   })
 })
-
--- Set up lspconfig.
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-local language_servers = require("lspconfig").util.available_servers()
-for _, language_server in ipairs(language_servers) do
-    require('lspconfig')[language_server].setup({
-        capabilities = capabilities
-        -- you can add other fields for setting up lsp server in this table
-    })
-end
