@@ -50,5 +50,6 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use 'norcalli/nvim-colorizer.lua'
+    use 'mbbill/undotree'
     use '42Paris/42header'
 end)
