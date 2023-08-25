@@ -51,5 +51,6 @@ return require('packer').startup(function(use)
     }
     use 'norcalli/nvim-colorizer.lua'
     use 'mbbill/undotree'
+    use 'tpope/vim-fugitive'
     use '42Paris/42header'
 end)
