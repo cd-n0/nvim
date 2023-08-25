@@ -36,6 +36,9 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+-- Enables 24-bit RGB color in the TUI
+vim.opt.termguicolors = true
+
 -- faster updatetime
 vim.opt.updatetime = 50
 -- colorcolumn for style
