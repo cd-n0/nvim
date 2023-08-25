@@ -32,12 +32,25 @@ vim.opt.smartindent = true
 vim.opt.undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir"
 vim.opt.undofile = true
 
+-- I get that they are useful but mostly they are annoying
+vim.opt.swapfile = false
+vim.opt.backup = false
+
 -- search highlight stuff
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 -- Enables 24-bit RGB color in the TUI
 vim.opt.termguicolors = true
+
+-- have n lines of space unless its the start or end of a file
+vim.opt.scrolloff = 10
+
+-- always show the signcolumn
+vim.opt.signcolumn = "yes"
+
+-- append the @ symbol to go to the file with gf
+vim.opt.isfname:append("@-@")
 
 -- faster updatetime
 vim.opt.updatetime = 50
