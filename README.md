@@ -1,2 +1,8 @@
-I no longer primarily use nvim anymore  
-My current editor is vim, with a single plugin for some language servers.
+## Installation
+> Unix, Linux Installation
+
+```shell
+git clone https://github.com/cd-n0/nvim.git $XDG_CONFIG_HOME/nvim
+```
+
+> Idk the rest of them xd, figure it out.
