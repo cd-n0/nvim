@@ -1,5 +1,11 @@
 require("cdn0.remap")
 require("cdn0.packer")
+require("cdn0.autocomplete")
+require("cdn0.lsp")
+require("cdn0.lsp_buffer")
+
+-- colorscheme
+vim.cmd.colorscheme('desert')
 
 -- Line numbers for fast navigation
 vim.opt.nu = true
