@@ -2,7 +2,8 @@
 local lspconfig = require('lspconfig')
 lspconfig.clangd.setup{}
 lspconfig.jdtls.setup{}
-lspconfig.tsserver.setup {}
+lspconfig.pyright.setup{}
+lspconfig.ts_ls.setup {}
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
