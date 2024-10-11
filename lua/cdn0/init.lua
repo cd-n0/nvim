@@ -1,11 +1,10 @@
 require("cdn0.remap")
 require("cdn0.packer")
-require("cdn0.autocomplete")
 require("cdn0.lsp")
 require("cdn0.lsp_buffer")
 
 -- colorscheme
-vim.cmd.colorscheme('desert')
+vim.cmd.colorscheme('simple-dark')
 
 -- Line numbers for fast navigation
 vim.opt.nu = true
@@ -78,3 +77,5 @@ vim.api.nvim_create_autocmd("BufEnter", {
     group = general,
     desc = "Disable newline comment",
 })
+
+vim.g.netrw_liststyle = 3
