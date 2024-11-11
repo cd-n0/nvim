@@ -5,7 +5,7 @@ require("cdn0.folds")
 require("cdn0.lsp_buffer")
 
 -- colorscheme
-vim.cmd.colorscheme('simple-dark')
+vim.cmd.colorscheme('quiet')
 
 -- Line numbers for fast navigation
 vim.opt.nu = true
