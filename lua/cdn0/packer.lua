@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
     use 'nvim-treesitter/nvim-treesitter'
     use 'lervag/vimtex'
     use 'ray-x/lsp_signature.nvim'
+    use 'mfussenegger/nvim-jdtls'
 	if packer_bootstrap then
 		require('packer').sync()
 	end

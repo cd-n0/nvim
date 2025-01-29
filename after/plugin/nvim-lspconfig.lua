@@ -1,7 +1,6 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.clangd.setup{}
-lspconfig.jdtls.setup{}
 lspconfig.pyright.setup{}
 lspconfig.ts_ls.setup {}
 lspconfig.rust_analyzer.setup {
