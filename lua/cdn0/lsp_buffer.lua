@@ -1,6 +1,6 @@
 function on_lsp_buffer_enabled()
     vim.opt.omnifunc = 'lsp#complete'
-    vim.opt.signcolumn = 'yes'
+    vim.opt.signcolumn = 'no'
     vim.api.nvim_buf_set_keymap(0, 'n', 'gi', '<plug>(lsp-definition)', {})
     vim.api.nvim_buf_set_keymap(0, 'n', 'gd', '<plug>(lsp-declaration)', {})
     vim.api.nvim_buf_set_keymap(0, 'n', 'gr', '<plug>(lsp-references)', {})

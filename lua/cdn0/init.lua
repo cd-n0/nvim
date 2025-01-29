@@ -1,11 +1,10 @@
 require("cdn0.remap")
 require("cdn0.packer")
-require("cdn0.lsp")
 require("cdn0.folds")
 require("cdn0.lsp_buffer")
 
 -- colorscheme
-vim.cmd.colorscheme('quiet')
+vim.cmd.colorscheme('habamax')
 
 -- Line numbers for fast navigation
 vim.opt.nu = true
@@ -22,9 +21,10 @@ vim.o.mouse = 'a'
 vim.o.syntax = 'on'
 -- statusline visible at all times
 vim.opt.laststatus= 2
--- I like linebreak
-vim.opt.wrap = true
-vim.opt.linebreak = true
+
+-- Linebreak/wrap
+vim.opt.linebreak = false
+vim.opt.wrap = false
 
 -- 4 instead of 8 indent
 vim.opt.tabstop = 4
@@ -50,10 +50,10 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 -- have n lines of space unless its the start or end of a file
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 0
 
--- always show the signcolumn
-vim.opt.signcolumn = "yes"
+-- Disable the signcolumn
+vim.opt.signcolumn = "no"
 
 -- append the @ symbol to go to the file with gf
 vim.opt.isfname:append("@-@")
@@ -71,12 +71,13 @@ vim.opt.splitbelow = true
 vim.opt.wildmode = "longest,list,full"
 
 -- Disable automatic comment insertion
-vim.api.nvim_create_autocmd("BufEnter", {
-    callback = function()
-        vim.opt.formatoptions:remove {"c", "r", "o"}
-    end,
-    group = general,
-    desc = "Disable newline comment",
-})
+-- Use <C-u> instead
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--     callback = function()
+--         vim.opt.formatoptions:remove {"c", "r", "o"}
+--     end,
+--     group = general,
+--     desc = "Disable newline comment",
+-- })
 
-vim.g.netrw_liststyle = 3
+vim.g.netrw_liststyle = 1
