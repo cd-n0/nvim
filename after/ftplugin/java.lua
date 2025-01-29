@@ -47,7 +47,7 @@ jdtls_installed = vim.fn.executable('jdtls')
 
 if jdtls_installed == 1 then
     local project_path = vim.fn.getcwd()
-    local equinox_launcher_file_path = vim.fn.system('ls', jdtls_install_path .. '/plugins/org.eclipse.equinox.launcher_*.jar | tr -d "\n"')
+    local equinox_launcher_file_path = vim.fn.system('ls ' .. jdtls_install_path .. '/plugins/org.eclipse.equinox.launcher_*.jar | tr -d "\n"')
     -- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
     local config = {
         -- The command that starts the language server
