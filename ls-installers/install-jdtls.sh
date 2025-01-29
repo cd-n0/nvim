@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -e
-JDTLS_PATH=$HOME/.local/bin/jdtls
+JDTLS_PATH=$HOME/.config/nvim/language_servers/jdtls
 mkdir -p $JDTLS_PATH
 cd $JDTLS_PATH
 

@@ -1,2 +1,3 @@
 # compiled stuff from packer
-/plugin
+plugin
+language_servers
