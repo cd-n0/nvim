@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
     use 'ray-x/lsp_signature.nvim'
     use 'mfussenegger/nvim-jdtls'
     use 'mbbill/undotree'
+    use 'tpope/vim-surround'
 	if packer_bootstrap then
 		require('packer').sync()
 	end
