@@ -1,5 +1,5 @@
-require("cdn0.remap")
 require("cdn0.packer")
+require("cdn0.remap")
 require("cdn0.folds")
 
 -- colorscheme
