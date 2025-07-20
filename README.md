@@ -13,6 +13,6 @@ git clone --depth 1 https://github.com/cd-n0/nvim "%LocalAppData%\nvim"
 
 For the powershell people:
 
-```bat
+```ps
 git clone --depth 1 https://github.com/cd-n0/nvim "$env:LOCALAPPDATA\nvim"
 ```
