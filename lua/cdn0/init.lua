@@ -34,7 +34,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 -- undo stuff
-vim.opt.undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir"
+vim.opt.undodir = vim.fn.stdpath("data") .. "/nvim/undodir"
 vim.opt.undofile = true
 
 -- I get that they are useful but mostly they are annoying
